@@ -6,28 +6,22 @@ import App from '../App';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,	
+    element: <App/>,
     children: [
       {
         path: "/",
-        element:{
-          path: "/",
-          element: <div>Home</div>,
-          
-        }
+        element: <h1>Home </h1>
       },
       {
         path: "/orders",
-        element: <h1>Orders
-          
-        </h1>
+        element: <div>Orders</div>
       },
       {
         path: "/about",
-        element: <div>About</div>,
-      },
+        element: <div>About</div>
+      }
     ]
-  },
+  } 
 ]);
 
 export default router;
